@@ -1,29 +1,29 @@
-let inputEl = document.getElementById("input");
-let dictionerEl = document.getElementById("dictioner");
-let btnEl = document.getElementById("btn");
-let carEl = document.getElementById("car");
-let personEl = document.getElementById("person");
-let busEl = document.getElementById("bus");
-let laptopEl = document.getElementById("laptop");
-let bookEl = document.getElementById("book");
+let inputEl = document.querySelector("#input");
+let dictionerEl = document.querySelector("#dictioner");
+let btnEl = document.querySelector("#btn");
+let carEl = document.querySelector("#car");
+let personEl = document.querySelector("#person");
+let busEl = document.querySelector("#bus");
+let laptopEl = document.querySelector("#laptop");
+let bookEl = document.querySelector("#book");
 
 btnEl.addEventListener("click" , (e) => {
     e.preventDefault();
     switch(inputEl.value.toLowerCase()){
         case "car" && "mashina":
-            carEl.classList.toggle("block_el");
+            carEl.style.display = "block";
         break;
         case "person" && "inson":
-            personEl.classList.toggle("block_el");
+            personEl.style.display = "block";
         break;
         case "bus" && "avtobus":
-            busEl.classList.toggle("block_el");
+            busEl.style.display = "block";
         break;
         case "laptop" && "noutbuk":
-            laptopEl.classList.toggle("block_el");
+            laptopEl.style.display = "block";
         break;
         case "book" && "kitob":
-            bookEl.classList.toggle("block_el");
+            bookEl.style.display = "block";
         break;
     }
 })
