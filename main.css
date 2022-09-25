@@ -63,3 +63,19 @@ p{
     text-align: center;
     margin: 30px 0;
 }
+
+.forms{
+    display: flex;
+}
+
+.form_uzb{
+    display: none;
+}
+
+.none{
+    display: none;
+}
+
+.block{
+    display: block;
+}
