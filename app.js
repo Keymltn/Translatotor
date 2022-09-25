@@ -10,20 +10,40 @@ let bookEl = document.querySelector("#book");
 btnEl.addEventListener("click" , (e) => {
     e.preventDefault();
     switch(inputEl.value.toLowerCase()){
-        case "car" && "mashina":
+        case "car":
             carEl.style.display = "block";
+            personEl.style.display = "none";
+            busEl.style.display = "none";
+            laptopEl.style.display = "none";
+            bookEl.style.display = "none";
         break;
-        case "person" && "inson":
+        case "person":
             personEl.style.display = "block";
+            carEl.style.display = "none";
+            busEl.style.display = "none";
+            laptopEl.style.display = "none";
+            bookEl.style.display = "none";
         break;
-        case "bus" && "avtobus":
+        case "bus":
             busEl.style.display = "block";
+            carEl.style.display = "none";
+            personEl.style.display = "none";
+            laptopEl.style.display = "none";
+            bookEl.style.display = "none";
         break;
-        case "laptop" && "noutbuk":
+        case "laptop":
             laptopEl.style.display = "block";
+            busEl.style.display = "none";
+            carEl.style.display = "none";
+            personEl.style.display = "none";
+            bookEl.style.display = "none";
         break;
-        case "book" && "kitob":
+        case "book":
             bookEl.style.display = "block";
+            laptopEl.style.display = "none";
+            busEl.style.display = "none";
+            carEl.style.display = "none";
+            personEl.style.display = "none";
         break;
     }
 })
